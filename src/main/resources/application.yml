@@ -1,0 +1,19 @@
+github:
+  token: ${GITHUB_TOKEN:}
+  api:
+    base-url: https://api.github.com
+    per-page: 100
+
+spring:
+  cache:
+    type: simple
+  application:
+    name: github-access-report
+
+async:
+  core-pool-size: 10
+  max-pool-size: 20
+  queue-capacity: 100
+
+server:
+  port: 8080
